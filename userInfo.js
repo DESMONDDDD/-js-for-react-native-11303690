@@ -2,12 +2,6 @@
 
 const { processArray, formatArrayStrings } = require('./arrayManipulation');
 
-/**
- * Function to create user profiles.
- * @param {string[]} names - Array of original names.
- * @param {string[]} modifiedNames - Array of modified names.
- * @returns {Object[]} - Array of user profiles with originalName, modifiedName, and id.
- */
 function createUserProfiles(names, modifiedNames) {
     return names.map((name, index) => ({
         id: index + 1,
@@ -16,7 +10,7 @@ function createUserProfiles(names, modifiedNames) {
     }));
 }
 
-// Example usage
+// usage
 const names = ["Desmond", "Clinton", "Felicity", "Mary", "Augustine"];
 const numbers = [1, 2, 3, 4, 5];
 
